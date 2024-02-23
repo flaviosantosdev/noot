@@ -34,7 +34,7 @@ function App() {
        .then(data => setWater(data.water))
         
 
-       axios.get(`https://api.hgbrasil.com/weather?key=1ca2e253&lat=-22.895&lon=-47.0439&user_ip=remote`)
+       axios.get(`https://api.hgbrasil.com/weather?key=11ba5c27&lat=-22.895&lon=-47.0439&user_ip=remote`)
        .then(res => res.json())
        .then(data => console.log(data))
       
