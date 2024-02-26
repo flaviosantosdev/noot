@@ -1,42 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+body{
+   font-family: "Inter", sans-serif;;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container{
+  max-width: 448px;
+  margin: 0 auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+h4{
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_data{
+  display: flex;
+  flex-direction: column;
+  max-width: 448px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input.large{
+  background-color:  #F2F4F6;
+  height:48px;
+  border:none;
+  border-radius:8px;
+  width: 448px;
+  font-weight: 400;
+  color: #6C6C6C;
+  padding-left:18px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom:24px;
 }
 
-.card {
-  padding: 2em;
+.fundo{
+  background: #EFFAFF;
+  height: 316px;
+  width: 448px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
 }
-
-.read-the-docs {
-  color: #888;
+.fundo img{
+  width: 180px ;
+  height: 180px;
+}
+.waterOrEarth{
+  display: flex;
+  max-width: 448px;
+  margin:0 auto;
+  align-items: center;
+  gap:40px;
+}
+.waterOrEarth button{
+  width: 114px;
+  height: 48px;
+  padding: 11px, 27px, 15px, 26px;
+  border-radius: 8px;
+  border:none;
+  margin-left: 12px;
+}
+.water_btn{
+  display: flex;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
