@@ -15,9 +15,6 @@ function App() {
   const [condition, setCondition] = useState('');
 
   
-  
-  
-  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,20 +28,24 @@ function App() {
         const apiipData = apiipResponse.data;
         setData_1(apiipData);
   
-       
-        const waterResponse = await axios.get(`https://isitwater-com.p.rapidapi.com/?latitude=${apiipData.latitude}&longitude=${apiipData.longitude}&rapidapi-key=dd9edbab35mshc923065220c1b14p1e9f2djsnffb881486e3e`);
+        
+        const waterResponse = await axios.get(`https://isitwater-com.p.rapidapi.com/?latitude=${apiipData.latitude}&longitude=${apiipData.longitude}&rapidapi-key=462ba44667msh9e867e92dc99d71p1421c6jsn70dc090b1232`);
         setWater(waterResponse.data.water);
+
+        axios.get(`https://api.hgbrasil.com/weather?format=json-cors&key=a6ce9019&lat=${data_1?.latitude}&lon=${data_1?.longitude}&user_ip=remote`)
+        .then(response => setCondition(response.data.results.condition_slug))
+        .catch(err => console.log(err));
   
       } catch (error) {
         console.log(error);
       }
     };
-  
+  ''
     fetchData(); 
   
   }, []);
-  
   useEffect(() => {
+
     axios.get(`https://api.hgbrasil.com/weather?format=json-cors&key=a6ce9019&lat=${data_1?.latitude}&lon=${data_1?.longitude}&user_ip=remote`)
         .then(response => setCondition(response.data.results.condition_slug))
         .catch(err => console.log(err));
