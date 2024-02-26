@@ -29,4 +29,4 @@ Email: flavio.santos92@Live.com
 Celular: 19 994472722
 
 ## Conclusão
-Agora você configurou e iniciou a aplicação React.js com sucesso. Certifique-se de seguir as práticas recomendadas ao trabalhar com chaves de API e de proteger informações sensíveis durante o desenvolvimento e a implantação.
+Agora você configurou e iniciou a aplicação React.js com sucesso.
